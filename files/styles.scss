@@ -21,7 +21,7 @@ h4{
 }
 
 h6{
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 100;
 
 }
@@ -43,7 +43,7 @@ header{
     
 
     #logo, ul {
-      font-size: 1.5rem;
+      
       position: relative;
       display: flex;
       flex-direction: row;
@@ -53,13 +53,18 @@ header{
     }
 
     #logo{
+      font-size: 3rem;
       float: left;
       font-weight: 900;
     }
 
     a{
-      color: #fff;
+      color: hsl(0,0%,100%);
       text-decoration: none;
+
+      &:hover{
+        color: hsl(0,0%,70%);
+      }
     }
 
     ul {
@@ -70,6 +75,9 @@ header{
      li{
         margin: 5px;
         font-weight: 700;
+        font-size: 1.4rem;
+
+      
         
 
       }
@@ -95,7 +103,7 @@ header{
 
   div {
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: #fff;
     border: 1px solid hsla(0, 0%, 48%, 0.5);
 
@@ -107,21 +115,85 @@ header{
 
   .subscribe{
     display: flex;
+    padding: 5%;
+    height: 300px;
 
 
 
-    // .button-field{
+    .button-field{
+      border: none;
+      width: 80%;
+      height: 50%;
+      margin: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
 
-    // }
+      button{
+        height: 80px;
+        width: 350px;
+        padding: 5px 30px;
+        
+        border: none;
+        cursor: pointer;
+        border-radius: 40px;
+        color:#fff;
+        font-size: 1rem;
+      }
+
+      .back-it .bookmark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .back-it{
+        background-color: hsl(176, 50%, 47%);
+        // background-color: hsl(176, 72%, 28%);
+      }
+
+
+      
+      .bookmark{
+           color: hsl(0, 0%, 48%);
+   
+   
+         
+      }
+
+
+
+
+
+      }
+
+
+
+
+     
+
+
+
+
+     
+
+
+          
+      }
+
+      
+
+    }
 
     
 
 
     
-  }
+  
 
 
 
 
 
-}
