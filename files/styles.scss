@@ -5,13 +5,29 @@
   font-size: 16px;
   font-family: 'Commissioner', sans-serif;
   
+  
+}
+body{
+  background-color: whitesmoke;
+}
+p{
+  font-size: 16px;
+  line-height: 1.7rem;
+  font-weight: 100;
+  color: #7a7a7a;
 }
 
-
+h1{
+  font-size: 2.8em;
+}
 h2{
   font-size: 32px;
   font-weight: 700;
 
+}
+h3{
+  font-size: 24px;
+  font-weight: 700;
 }
 
 h4{
@@ -53,7 +69,7 @@ header{
     }
 
     #logo{
-      font-size: 3rem;
+      font-size: 2.7rem;
       float: left;
       font-weight: 900;
     }
@@ -87,10 +103,10 @@ header{
   }
 
 }
-
+// starrt of the info section 
 .info-board{
   
-  width: 70vw;
+  width: 60vw;
   
   margin: auto;
   bottom: 100px;
@@ -98,7 +114,7 @@ header{
 
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 3%;
+  grid-gap: 2%;
 
 
   .tab{
@@ -118,7 +134,7 @@ header{
     align-items: center;
 
   }
-
+  // section for the subcribe or fund me buttons
   .subscribe{
     display: flex;
     padding: 5%;
@@ -147,14 +163,14 @@ header{
 
       button{
         height: 80px;
-        width: 40%;
+        width: 200px;
         padding: 5px 30px;
         
         border: none;
         cursor: pointer;
         border-radius: 40px;
         color:#fff;
-        font-size: 1.2rem;
+        font-size: 0.975rem;
       }
 
       .back-it .bookmark {
@@ -165,6 +181,7 @@ header{
 
       .back-it{
         background-color: hsl(176, 50%, 47%);
+        transition: background-color 400ms 200ms;
         
         &:hover{
           background-color: hsl(176, 72%, 28%);
@@ -173,6 +190,7 @@ header{
       .bookmark{
           color: hsl(0, 0%, 48%);
           position: relative;
+          text-align: right;
 
           img {
             position: absolute;
@@ -186,12 +204,12 @@ header{
           
       }
 
-
+      // section where the total backers are shown
       .number-board{
         height: 250px;
 
         .values{
-              width: 70%;
+              width: 85%;
               height: 50%;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
@@ -215,7 +233,7 @@ header{
                   
                 
                 h4{
-                  font-size: 2.5rem;
+                  font-size: 2.25rem;
                   font-weight: bold;
                 }
               }
@@ -247,7 +265,118 @@ header{
        
       }
 
-      
+      .inform-section{
+        padding: 5%;
+        display: flex;
+        align-items: flex-start;
+        
+        
+        
+
+        p  {
+          padding: 1%;
+          font-size: 0.975rem;
+          
+          
+        }
+
+        h3{
+          padding: 3% 1%;
+        }
+        
+
+        
+
+        .donation{
+          height: 300px;
+          margin: 10px 0px;
+
+            div{
+              
+              position: relative;
+              display: flex;
+              flex-direction: row;
+            }
+
+            h4{
+              font-size: 1.3rem;  
+            }
+
+            h6{
+              color: hsl(176, 50%, 47%);
+              font-weight: 500;
+            }
+
+            &--top{
+              height: 20%;
+              width: 80%;
+              display: flex;
+              justify-content: space-between;
+              padding: 2%;
+
+             
+            }
+            &--middle{
+              height: 50%;
+              width: 80%;
+
+              p{
+                font-size: 1.3rem;
+                padding: 1rem;
+                line-height: 2rem;
+                color: #000;
+              }
+            }
+            &--bottom{
+              height: 30%;
+              width: 80%;
+              display: flex;
+              justify-content: space-between;
+              padding: 2%;
+
+              span{
+                font-size: 0.875rem;
+                color: #7a7a7a;
+              }
+
+              button{
+                height: 50px;
+                width: 30%;
+                padding: 5px 30px;
+        
+                border: none;
+                cursor: pointer;
+                border-radius: 40px;
+                
+                font-size: 1.025rem;
+                color:#fff;
+
+              }
+              .reward{
+                background-color: hsl(176, 50%, 47%);
+                transition: background-color 400ms 200ms;
+              &:hover{
+                background-color: hsl(176, 72%, 28%);
+              }
+                
+              }
+              .reward-finished{
+                background-color:hsla(0, 0%, 48%, 0.7);
+              }
+            
+            }
+
+
+
+
+          
+
+          
+
+
+
+        }
+      }
 
     }
 

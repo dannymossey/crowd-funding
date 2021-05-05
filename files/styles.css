@@ -6,8 +6,28 @@
   font-family: 'Commissioner', sans-serif;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7rem;
+  font-weight: 100;
+  color: #7a7a7a;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
 h2 {
   font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -45,7 +65,7 @@ header nav #logo, header nav ul {
 }
 
 header nav #logo {
-  font-size: 3rem;
+  font-size: 2.7rem;
   float: left;
   font-weight: 900;
 }
@@ -72,13 +92,13 @@ header nav ul li {
 }
 
 .info-board {
-  width: 70vw;
+  width: 60vw;
   margin: auto;
   bottom: 100px;
   position: relative;
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 3%;
+  grid-gap: 2%;
 }
 
 .info-board .tab {
@@ -120,13 +140,13 @@ header nav ul li {
 
 .info-board .subscribe .button-field button {
   height: 80px;
-  width: 40%;
+  width: 200px;
   padding: 5px 30px;
   border: none;
   cursor: pointer;
   border-radius: 40px;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 0.975rem;
 }
 
 .info-board .subscribe .button-field .back-it .bookmark {
@@ -137,6 +157,7 @@ header nav ul li {
 
 .info-board .subscribe .button-field .back-it {
   background-color: #3cb4ac;
+  transition: background-color 400ms 200ms;
 }
 
 .info-board .subscribe .button-field .back-it:hover {
@@ -146,6 +167,7 @@ header nav ul li {
 .info-board .subscribe .button-field .bookmark {
   color: #7a7a7a;
   position: relative;
+  text-align: right;
 }
 
 .info-board .subscribe .button-field .bookmark img {
@@ -160,7 +182,7 @@ header nav ul li {
 }
 
 .info-board .number-board .values {
-  width: 70%;
+  width: 85%;
   height: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -180,7 +202,7 @@ header nav ul li {
 }
 
 .info-board .number-board .values div h4 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
@@ -203,5 +225,97 @@ header nav ul li {
   bottom: 0;
   border-radius: 15px;
   background-color: #3cb4ac;
+}
+
+.info-board .inform-section {
+  padding: 5%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-board .inform-section p {
+  padding: 1%;
+  font-size: 0.975rem;
+}
+
+.info-board .inform-section h3 {
+  padding: 3% 1%;
+}
+
+.info-board .inform-section .donation {
+  height: 300px;
+  margin: 10px 0px;
+}
+
+.info-board .inform-section .donation div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-board .inform-section .donation h4 {
+  font-size: 1.3rem;
+}
+
+.info-board .inform-section .donation h6 {
+  color: #3cb4ac;
+  font-weight: 500;
+}
+
+.info-board .inform-section .donation--top {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.info-board .inform-section .donation--middle {
+  height: 50%;
+  width: 80%;
+}
+
+.info-board .inform-section .donation--middle p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  line-height: 2rem;
+  color: #000;
+}
+
+.info-board .inform-section .donation--bottom {
+  height: 30%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.info-board .inform-section .donation--bottom span {
+  font-size: 0.875rem;
+  color: #7a7a7a;
+}
+
+.info-board .inform-section .donation--bottom button {
+  height: 50px;
+  width: 30%;
+  padding: 5px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 1.025rem;
+  color: #fff;
+}
+
+.info-board .inform-section .donation--bottom .reward {
+  background-color: #3cb4ac;
+  transition: background-color 400ms 200ms;
+}
+
+.info-board .inform-section .donation--bottom .reward:hover {
+  background-color: #147b74;
+}
+
+.info-board .inform-section .donation--bottom .reward-finished {
+  background-color: rgba(122, 122, 122, 0.7);
 }
 /*# sourceMappingURL=styles.css.map */
