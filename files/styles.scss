@@ -117,6 +117,14 @@ header{
     display: flex;
     padding: 5%;
     height: 300px;
+    position: relative;
+
+    #master-logo{
+      position: absolute;
+      top: -30px;
+      height: 70px;
+           
+    }
 
 
 
@@ -133,14 +141,14 @@ header{
 
       button{
         height: 80px;
-        width: 350px;
+        width: 40%;
         padding: 5px 30px;
         
         border: none;
         cursor: pointer;
         border-radius: 40px;
         color:#fff;
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       .back-it .bookmark {
@@ -151,36 +159,48 @@ header{
 
       .back-it{
         background-color: hsl(176, 50%, 47%);
-        // background-color: hsl(176, 72%, 28%);
+        
+        &:hover{
+          background-color: hsl(176, 72%, 28%);
+        }
       }
-
-
-      
       .bookmark{
-           color: hsl(0, 0%, 48%);
-   
-   
-         
+          color: hsl(0, 0%, 48%);
+          position: relative;
+
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 80px;
+          }
       }
 
-
-
-
-
       }
-
-
-
-
-     
-
-
-
-
-     
-
-
           
+      }
+
+
+      .number-board{
+        height: 250px;
+
+        .values{
+              width: 100%;
+              height: 50%;
+              background-color: #000;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+
+
+              div{
+                border: none;
+                border-right: 1px solid lightgrey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+        }
+
       }
 
       

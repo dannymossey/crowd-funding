@@ -95,6 +95,13 @@ header nav ul li {
   display: flex;
   padding: 5%;
   height: 300px;
+  position: relative;
+}
+
+.info-board .subscribe #master-logo {
+  position: absolute;
+  top: -30px;
+  height: 70px;
 }
 
 .info-board .subscribe .button-field {
@@ -110,13 +117,13 @@ header nav ul li {
 
 .info-board .subscribe .button-field button {
   height: 80px;
-  width: 350px;
+  width: 40%;
   padding: 5px 30px;
   border: none;
   cursor: pointer;
   border-radius: 40px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .info-board .subscribe .button-field .back-it .bookmark {
@@ -129,7 +136,39 @@ header nav ul li {
   background-color: #3cb4ac;
 }
 
+.info-board .subscribe .button-field .back-it:hover {
+  background-color: #147b74;
+}
+
 .info-board .subscribe .button-field .bookmark {
   color: #7a7a7a;
+  position: relative;
+}
+
+.info-board .subscribe .button-field .bookmark img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 80px;
+}
+
+.info-board .number-board {
+  height: 250px;
+}
+
+.info-board .number-board .values {
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-board .number-board .values div {
+  border: none;
+  border-right: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
