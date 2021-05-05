@@ -101,11 +101,17 @@ header{
   grid-gap: 3%;
 
 
+  .tab{
+    border: 1px solid hsla(0, 0%, 48%, 0.5);
+
+  }
+
+
   div {
     width: 100%;
     height: auto;
     background-color: #fff;
-    border: 1px solid hsla(0, 0%, 48%, 0.5);
+  
 
     display: flex;
     flex-direction: column;
@@ -185,22 +191,60 @@ header{
         height: 250px;
 
         .values{
-              width: 100%;
+              width: 70%;
               height: 50%;
-              background-color: #000;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
+              
+              
+
 
 
               div{
                 border: none;
-                border-right: 1px solid lightgrey;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
+                padding: 2em;
                 justify-content: center;
+                border-left: 1px solid hsla(0, 0%, 48%, 0.5);
+                
+                &:first-child{
+                  border: none;
+
+                }
+                  
+                
+                h4{
+                  font-size: 2.5rem;
+                  font-weight: bold;
+                }
               }
         }
 
+        .progress-bar{
+          width: 85%;
+          height: 20px;
+          display: flex;
+          position: relative;
+          top: 15%;
+          border-radius: 15px;
+          background-color: lightgrey;
+
+          &::before{
+            content: '';
+            width: 75%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 15px;
+            background-color: hsl(176, 50%, 47%);
+          }
+         
+
+        }
+
+       
       }
 
       
