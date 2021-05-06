@@ -26,6 +26,18 @@ h2 {
   font-weight: 700;
 }
 
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 h3 {
   font-size: 24px;
   font-weight: 700;
@@ -68,6 +80,12 @@ header nav #logo {
   font-size: 2.7rem;
   float: left;
   font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+  header nav #logo {
+    font-size: 2.3rem;
+  }
 }
 
 header nav a {
@@ -127,6 +145,12 @@ header nav ul li {
   height: 70px;
 }
 
+@media screen and (min-width: 768px) {
+  .info-board .subscribe #master-logo {
+    height: 58px;
+  }
+}
+
 .info-board .subscribe .button-field {
   border: none;
   width: 80%;
@@ -139,7 +163,7 @@ header nav ul li {
 }
 
 .info-board .subscribe .button-field button {
-  height: 80px;
+  height: 58px;
   width: 200px;
   padding: 5px 30px;
   border: none;
@@ -147,6 +171,12 @@ header nav ul li {
   border-radius: 40px;
   color: #fff;
   font-size: 0.975rem;
+}
+
+@media screen and (min-width: 500px) {
+  .info-board .subscribe .button-field button {
+    font-size: 0.725em;
+  }
 }
 
 .info-board .subscribe .button-field .back-it .bookmark {
@@ -172,9 +202,10 @@ header nav ul li {
 
 .info-board .subscribe .button-field .bookmark img {
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 80px;
+  left: 1px;
+  top: -4px;
+  height: 65px;
+  width: 68px;
 }
 
 .info-board .number-board {

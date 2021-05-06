@@ -1,3 +1,5 @@
+@import "_mixins.scss";
+
 *{
   margin: 0;
   padding: 0;
@@ -23,6 +25,14 @@ h1{
 h2{
   font-size: 32px;
   font-weight: 700;
+  
+  @include breakpoints(mobile){
+    font-size: 0.4rem;
+  }
+
+  @include breakpoints(tablet){
+    font-size: 2rem;
+  }
 
 }
 h3{
@@ -72,6 +82,10 @@ header{
       font-size: 2.7rem;
       float: left;
       font-weight: 900;
+
+      @include breakpoints(laptop){
+        font-size: 2.3rem;
+      }
     }
 
     a{
@@ -141,10 +155,16 @@ header{
     height: 300px;
     position: relative;
 
+    
+
     #master-logo{
       position: absolute;
       top: -30px;
       height: 70px;
+
+      @include breakpoints(laptop){
+        height: 58px;
+      }
            
     }
 
@@ -159,10 +179,12 @@ header{
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
+
       
 
       button{
-        height: 80px;
+        height: 58px;
         width: 200px;
         padding: 5px 30px;
         
@@ -171,6 +193,11 @@ header{
         border-radius: 40px;
         color:#fff;
         font-size: 0.975rem;
+
+        @include breakpoints(tablet){
+          font-size: 0.725em;
+
+        }
       }
 
       .back-it .bookmark {
@@ -194,9 +221,11 @@ header{
 
           img {
             position: absolute;
-            left: 0;
-            top: 0;
-            height: 80px;
+            left: 1px;
+            top: -4px;
+            
+            height: 65px;
+            width: 68px;
           }
       }
 
