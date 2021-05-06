@@ -26,15 +26,9 @@ h2 {
   font-weight: 700;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1300px) {
   h2 {
-    font-size: 0.4rem;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -53,11 +47,37 @@ h6 {
   font-weight: 100;
 }
 
+@media screen and (max-width: 1300px) {
+  h6 {
+    font-size: 1rem;
+  }
+}
+
 header {
   background: url(../images/image-hero-desktop.jpg) no-repeat center;
   background-size: cover;
   height: 30vh;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    background: url(../images/image-hero-mobile.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+  }
 }
 
 header nav {
@@ -82,9 +102,15 @@ header nav #logo {
   font-weight: 900;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   header nav #logo {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header nav #logo {
+    font-size: 1.5rem;
   }
 }
 
@@ -101,6 +127,13 @@ header nav ul {
   list-style: none;
   width: 100%;
   justify-content: flex-end;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    justify-content: space-around;
+  }
 }
 
 header nav ul li {
@@ -109,8 +142,15 @@ header nav ul li {
   font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1300px) {
+  header nav ul li {
+    font-size: 1.1rem;
+  }
+}
+
 .info-board {
-  width: 60vw;
+  width: 70vw;
+  max-width: 1300px;
   margin: auto;
   bottom: 100px;
   position: relative;
@@ -119,8 +159,23 @@ header nav ul li {
   grid-gap: 2%;
 }
 
+@media screen and (max-width: 768px) {
+  .info-board {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-board {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .info-board .tab {
   border: 1px solid rgba(122, 122, 122, 0.5);
+  border-radius: 5px;
 }
 
 .info-board div {
@@ -135,8 +190,14 @@ header nav ul li {
 .info-board .subscribe {
   display: flex;
   padding: 5%;
-  height: 300px;
+  height: 250px;
   position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .info-board .subscribe {
+    height: 300px;
+  }
 }
 
 .info-board .subscribe #master-logo {
@@ -145,10 +206,14 @@ header nav ul li {
   height: 70px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1300px) {
   .info-board .subscribe #master-logo {
-    height: 58px;
+    height: 56px;
   }
+}
+
+.info-board .subscribe h2 {
+  padding: 2%;
 }
 
 .info-board .subscribe .button-field {
@@ -162,6 +227,13 @@ header nav ul li {
   align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .info-board .subscribe .button-field {
+    flex-direction: column;
+    margin: 15px;
+  }
+}
+
 .info-board .subscribe .button-field button {
   height: 58px;
   width: 200px;
@@ -173,9 +245,10 @@ header nav ul li {
   font-size: 0.975rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 768px) {
   .info-board .subscribe .button-field button {
-    font-size: 0.725em;
+    height: 50px;
+    width: 180px;
   }
 }
 
@@ -208,6 +281,13 @@ header nav ul li {
   width: 68px;
 }
 
+@media screen and (max-width: 768px) {
+  .info-board .subscribe .button-field .bookmark img {
+    height: 56px;
+    width: 56px;
+  }
+}
+
 .info-board .number-board {
   height: 250px;
 }
@@ -217,6 +297,12 @@ header nav ul li {
   height: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1300px) {
+  .info-board .number-board .values {
+    width: 100%;
+  }
 }
 
 .info-board .number-board .values div {
@@ -235,6 +321,23 @@ header nav ul li {
 .info-board .number-board .values div h4 {
   font-size: 2.25rem;
   font-weight: bold;
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .info-board .number-board .values div h4 {
+    font-size: 2rem;
+  }
+}
+
+.info-board .number-board .values div h6 {
+  font-size: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .info-board .number-board .values div h6 {
+    font-size: 0.8rem;
+  }
 }
 
 .info-board .number-board .progress-bar {
@@ -266,7 +369,10 @@ header nav ul li {
 
 .info-board .inform-section p {
   padding: 1%;
-  font-size: 0.975rem;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 1.7em;
 }
 
 .info-board .inform-section h3 {
@@ -301,16 +407,42 @@ header nav ul li {
   padding: 2%;
 }
 
+@media screen and (max-width: 768px) {
+  .info-board .inform-section .donation--top {
+    padding: 0.5rem;
+    width: 90%;
+  }
+}
+
 .info-board .inform-section .donation--middle {
   height: 50%;
   width: 80%;
 }
 
+@media screen and (max-width: 768px) {
+  .info-board .inform-section .donation--middle {
+    width: 90%;
+  }
+}
+
 .info-board .inform-section .donation--middle p {
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 0.5rem;
   line-height: 2rem;
   color: #000;
+}
+
+@media screen and (max-width: 1300px) {
+  .info-board .inform-section .donation--middle p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-board .inform-section .donation--middle p {
+    padding: 0;
+    font-size: 0.925;
+  }
 }
 
 .info-board .inform-section .donation--bottom {
@@ -335,6 +467,12 @@ header nav ul li {
   border-radius: 40px;
   font-size: 1.025rem;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .info-board .inform-section .donation--bottom button {
+    font-size: 0.7rem;
+  }
 }
 
 .info-board .inform-section .donation--bottom .reward {
