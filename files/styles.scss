@@ -18,6 +18,8 @@ p{
   line-height: 1.7rem;
   font-weight: 100;
   color: #7a7a7a;
+
+  
 }
 
 h1{
@@ -58,22 +60,31 @@ header{
   background-size: cover;
   height: 30vh;
   color: #fff;
+  
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
   @include tablet {
-    background-position: center;
-    background-size: cover;
     height: 400px;
+    position: relative;
+    
   }
 
   @include mobile {
     background: url(../images/image-hero-mobile.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+    
     margin: 0;
     padding: 0;
 
     height: 400px;
+  }
+  @include medium-mobile{
+    width: 100%;
+    margin: 0;
+    height: 400px;
+    
+
   }
 
   nav{
@@ -124,9 +135,12 @@ header{
       justify-content: flex-end;
       margin-top: 5px;
 
-
       @include tablet{
         justify-content: space-around;
+      }
+
+      @include mobile{
+        display: none;
       }
 
      li{
@@ -169,6 +183,8 @@ header{
     margin: 0;
     padding: 0;
   }
+
+
   
 
 
@@ -312,6 +328,10 @@ header{
       .number-board{
         height: 250px;
 
+        @include mobile{
+          height: 300px;
+        }
+
         .values{
               width: 85%;
               height: 50%;
@@ -320,6 +340,14 @@ header{
 
               @include laptop{
                 width: 100%;
+              }
+
+              @include mobile {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                margin: 0;
+                width: 30%;
+
               }
               
               
@@ -336,14 +364,27 @@ header{
                 
                 &:first-child{
                   border: none;
+                  @include mobile{
+                    border-bottom: 1px solid hsla(0, 0%, 48%, 0.5);
+                    padding: 0;
+                    
+                  }
+                }
 
+                @include mobile {
+                  padding: 0 2%;
+                  justify-content: center;
+                  align-items: center;
+                  border-left: none;
+                  border-bottom: 1px solid hsla(0, 0%, 48%, 0.5);
+                  padding: 0;
                 }
                   
                 
                 h4{
                   font-size: 2.25rem;
                   font-weight: bold;
-                  padding: 2% 0;
+                  padding: 3% 0;
 
                   @include laptop{
                     font-size: 2rem;
@@ -380,7 +421,12 @@ header{
             border-radius: 15px;
             background-color: hsl(176, 50%, 47%);
           }
-         
+          @include mobile {
+            top: 30%;
+            margin: 0;
+            
+
+          }
 
         }
 
@@ -428,12 +474,19 @@ header{
 
             h4{
               font-size: 1.3rem; 
+
+              @include mobile{
+                font-size: 0.8rem;
+              }
              
             }
 
             h6{
               color: hsl(176, 50%, 47%);
               font-weight: 500;
+              @include mobile{
+                font-size: 0.7rem;
+              }
             }
 
             &--top{
@@ -475,6 +528,9 @@ header{
                   font-size: 0.925;
               
                 }
+                @include mobile{
+                  font-size: 0.7rem;
+                }
 
               }
             }
@@ -505,6 +561,12 @@ header{
                 @include tablet{
                   font-size: 0.7rem;
               
+                }
+
+                @include mobile{
+                  font-size: 0.5rem;
+                  text-align: center;
+                  width: 40%;
                 }
 
               }

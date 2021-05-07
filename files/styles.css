@@ -58,24 +58,31 @@ header {
   background-size: cover;
   height: 30vh;
   color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   header {
-    background-position: center;
-    background-size: cover;
     height: 400px;
+    position: relative;
   }
 }
 
 @media screen and (max-width: 500px) {
   header {
     background: url(../images/image-hero-mobile.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
     margin: 0;
     padding: 0;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    width: 100%;
+    margin: 0;
     height: 400px;
   }
 }
@@ -133,6 +140,12 @@ header nav ul {
 @media screen and (max-width: 768px) {
   header nav ul {
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header nav ul {
+    display: none;
   }
 }
 
@@ -292,6 +305,12 @@ header nav ul li {
   height: 250px;
 }
 
+@media screen and (max-width: 500px) {
+  .info-board .number-board {
+    height: 300px;
+  }
+}
+
 .info-board .number-board .values {
   width: 85%;
   height: 50%;
@@ -302,6 +321,15 @@ header nav ul li {
 @media screen and (max-width: 1300px) {
   .info-board .number-board .values {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-board .number-board .values {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+    width: 30%;
   }
 }
 
@@ -318,10 +346,28 @@ header nav ul li {
   border: none;
 }
 
+@media screen and (max-width: 500px) {
+  .info-board .number-board .values div:first-child {
+    border-bottom: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-board .number-board .values div {
+    padding: 0 2%;
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 0;
+  }
+}
+
 .info-board .number-board .values div h4 {
   font-size: 2.25rem;
   font-weight: bold;
-  padding: 2% 0;
+  padding: 3% 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -361,6 +407,13 @@ header nav ul li {
   background-color: #3cb4ac;
 }
 
+@media screen and (max-width: 500px) {
+  .info-board .number-board .progress-bar {
+    top: 30%;
+    margin: 0;
+  }
+}
+
 .info-board .inform-section {
   padding: 5%;
   display: flex;
@@ -394,9 +447,21 @@ header nav ul li {
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 500px) {
+  .info-board .inform-section .donation h4 {
+    font-size: 0.8rem;
+  }
+}
+
 .info-board .inform-section .donation h6 {
   color: #3cb4ac;
   font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .info-board .inform-section .donation h6 {
+    font-size: 0.7rem;
+  }
 }
 
 .info-board .inform-section .donation--top {
@@ -445,6 +510,12 @@ header nav ul li {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .info-board .inform-section .donation--middle p {
+    font-size: 0.7rem;
+  }
+}
+
 .info-board .inform-section .donation--bottom {
   height: 30%;
   width: 80%;
@@ -472,6 +543,14 @@ header nav ul li {
 @media screen and (max-width: 768px) {
   .info-board .inform-section .donation--bottom button {
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-board .inform-section .donation--bottom button {
+    font-size: 0.5rem;
+    text-align: center;
+    width: 40%;
   }
 }
 
