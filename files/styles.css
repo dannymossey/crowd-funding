@@ -161,6 +161,48 @@ header nav ul li {
   }
 }
 
+header #burger {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  header #burger {
+    display: block;
+  }
+}
+
+header .burger--section {
+  display: none;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90vw;
+  height: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #7a7a7a;
+}
+
+header .burger--section.show {
+  display: flex;
+}
+
+header .burger--section a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+}
+
+header .burger--section li {
+  padding: 1.5rem;
+  border-bottom: 1px solid #7a7a7a;
+}
+
 .info-board {
   width: 70vw;
   max-width: 1300px;

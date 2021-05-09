@@ -156,10 +156,72 @@ header{
         
 
       }
+       
+    }
+
+   
+
+  }
+
+  #burger{
+   
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    display: none;
+    
+    
+    
+
+    @include mobile{
+      display: block;
+    }
+
+  
+  }
+
+  .burger--section{
+
+    display: none;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90vw;
+    height: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #7a7a7a;
+    
+    &.show{
+      display: flex;
+    }
+    
+
+    @include mobile{
+      
+      
       
     }
 
+    a {
+      color: black;
+      text-decoration: none;
+      list-style: none;
+      width: 100%;
+
+    }
+
+    li{
+      padding: 1.5rem;
+      border-bottom: 1px solid #7a7a7a;
+      
+    }
+
+
   }
+
+  
 
 }
 // starrt of the info section 
@@ -462,6 +524,11 @@ header{
         .donation{
           height: 300px;
           margin: 10px 0px;
+
+         
+
+
+          
 
          
 
